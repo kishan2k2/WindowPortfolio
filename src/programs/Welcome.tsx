@@ -62,7 +62,7 @@ const Welcome = ({ id }: props) => {
       {!aboutmeView ? (
         <div>
           <h3 className={styles.welcome_text}>
-            Welcome To Kishan's Personal Website
+            Welcome To Kishan&apos; Personal Website
           </h3>
           <p className={styles.subtitle}>
             Learn more about me by clicking any of the icons below to get
