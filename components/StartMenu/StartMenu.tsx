@@ -35,7 +35,7 @@ interface StartMenuProps {
 
 const StartMenu = ({ menuControl }: StartMenuProps) => {
   const handleOpenGitHub = () => {
-    window.open("https://github.com/firwer", "_blank", "noreferrer");
+    window.open("https://github.com/kishan2k2", "_blank", "noreferrer");
   };
 
   const handleOpenResume = () => {
@@ -81,7 +81,7 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
             textShadow: "1px 1px #000000",
           }}
         >
-          Wei Pin&apos;s PC
+          Kishan's PC
         </p>
       </div>
       <hr className={styles.orangehr} />
@@ -94,13 +94,13 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
               icon={ie}
               type={1}
             />
-            <StartMenuItem
+            {/* <StartMenuItem
               onClick={() => handleRunApp(1)}
               title="E-mail"
               subtitle="Drop me a message!"
               icon={outlook}
               type={1}
-            />
+            /> */}
             <hr className={styles.greyhr} />
             <StartMenuItem
               onClick={handleOpenResume}

@@ -21,39 +21,15 @@ import userprofile2 from "../../assets/userprofile2.jpg";
 import ebc1 from "../../assets/ebc1.jpeg";
 import ebc2 from "../../assets/ebc2.jpg";
 
-const INTRO = `Hi, I'm Wei Pin, an aspiring technopreneur based in Singapore. I am 
-  currently a Computer Engineering Sophomore at the National University of Singapore and I am
-  passionate about building innovative software solutions that solves problems.`;
+const INTRO = `Hi this is kishan`;
 
-const WHYSITE = `I always love challenging myself to creating something different and interesting.
-The main reason why I chose to create a website that resembles a Windows XP OS is because my 
-software development journey first started back in the early 2010 when I was creating simple utility
-apps such as calculators, web browser, message encrypters, phishing app and simple chatbot using 
-Visual Basic on Visual Studio 2010 out of curiousity and fun. Now that I have more experience in
-software development, I decided to "recreate" the environment I used to work in back then and make
-it feel as though you are accessing my computer directly.`;
+const WHYSITE = `Here is what I can do `;
 
-const INTERESTS = `Other than my interest in developing websites and apps for fun, I love solo
-travelling and exploring new places. It is during these times I get to reflect on my own life and
-step out of my comfort zone to talk to people within the local community and my hostel where I meet
-people from all over the world. Other than that, I am also a firm believer that the best way to 
-learn and grow as a person is to immerse yourself in a different culture and environment. This
-forces you become adaptable to new situations and learn to be more independent and self-reliant.`;
+const INTERESTS = `No interest`;
 
-const INTERESTS2 = `Other than traveling, I love trekking and cycling, and as a challenge to myself, I decided 
-to embark on a journey to the Everest Base Camp. After a 130KM, 2504M grueling vertical ascend from 
-Tenzing-Hillary Airport, widely regarded as some of the world’s most dangerous airports, I made it 
-with a friend of mine and our guide. The entire experience was spectacular as I have also met and struck up 
-conversations with trekkers from all walks of life and background, and we all had a common goal 
-of reaching the top of the base camp.`;
+const INTERESTS2 = `No interest`;
 
-const INTERESTS3 = `Also, I love (really in love with) drone photography and filming! This is my one true passion, as
-the angles I get are much more unique compared to any DSLR/phone camera. The perspectives that
-aerial shots offer are so mesmerizing that it makes you feel like a bird (and this fulfills my 
-desire to be able to fly lol) (You can view some of collection on this website). Lastly, I love 
-to read non-fiction books, especially those that are related to entrepreneurship, biographies, 
-and self-help, as those books usually contain a lot of valuable insights and satiate my curiosity 
-about the lives of others.
+const INTERESTS3 = `No interest.
 `;
 
 interface props {
@@ -86,7 +62,7 @@ const Welcome = ({ id }: props) => {
       {!aboutmeView ? (
         <div>
           <h3 className={styles.welcome_text}>
-            Welcome To Wei Pin&apos;s Personal Website
+            Welcome To Kishan's Personal Website
           </h3>
           <p className={styles.subtitle}>
             Learn more about me by clicking any of the icons below to get
@@ -106,7 +82,7 @@ const Welcome = ({ id }: props) => {
                 tooltip="My Brain Dump"
                 onClick={() => {
                   window.open(
-                    "https://github.com/firwer",
+                    "https://github.com/kishan2k2",
                     "_blank",
                     "noreferrer"
                   );
@@ -118,7 +94,7 @@ const Welcome = ({ id }: props) => {
                 tooltip="Connect with me!"
                 onClick={() => {
                   window.open(
-                    "https://www.linkedin.com/in/poh-wei-pin-7b9061183/",
+                    "https://www.linkedin.com/in/kishan--5906a9216/",
                     "_blank",
                     "noreferrer"
                   );
@@ -129,7 +105,9 @@ const Welcome = ({ id }: props) => {
                 text={"My Resume"}
                 tooltip="My Curriculum Vitae"
                 onClick={() => {
-                  window.open("./Resume.pdf");
+                  window.open("https://drive.google.com/file/d/1AQccmcrAY1Ku9eXHAMoO_-5tiN3BzWcc/view?usp=sharing"),
+                  "_balnk",
+                  "noreferrer"
                 }}
               />
             </div>
@@ -140,18 +118,18 @@ const Welcome = ({ id }: props) => {
                 tooltip="Interesting projects I have done"
                 onClick={() => handleRunApp(2)}
               />
-              <WelcomeIcon
+              {/* <WelcomeIcon
                 img={outlook}
                 text={"Send Me An Email"}
                 tooltip="Reach out to me!"
                 onClick={() => handleRunApp(1)}
-              />
-              <WelcomeIcon
+              /> */}
+              {/* <WelcomeIcon
                 img={gallery}
                 text={"My Photography Collection"}
                 tooltip="Click to view!"
                 onClick={() => handleRunApp(4)}
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -168,14 +146,14 @@ const Welcome = ({ id }: props) => {
                 height={200}
                 className={styles.profile_pic}
               />
-              <Image
+              {/* <Image
                 alt="profile_pic"
                 src={userprofile2.src}
                 width={200}
                 height={200}
                 className={styles.profile_pic}
-              />
-              <Image
+              /> */}
+              {/* <Image
                 alt="profile_pic"
                 src={ebc1.src}
                 width={200}
@@ -188,12 +166,12 @@ const Welcome = ({ id }: props) => {
                 width={200}
                 height={200}
                 className={styles.profile_pic}
-              />
+              /> */}
             </div>
             <div className={styles.text_col}>
               <p className={styles.subtitle}>{INTRO}</p>
               <h3 className={styles.subtitle_header}>
-                Why a personal website like this?
+                What do I do.
               </h3>
               <p className={styles.subtitle}>{WHYSITE}</p>
               <h3 className={styles.subtitle_header}>

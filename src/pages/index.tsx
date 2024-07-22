@@ -8,6 +8,8 @@ import mycomputer from "../../assets/mycomputer.png";
 import bin from "../../assets/recycling_bin.png";
 import pdf from "../../assets/pdf.png";
 import github from "../../assets/github.png";
+import LeetCode from "../../assets/LeetCode.png";
+import codechef from "../../assets/codechef.png";
 import cmd from "../../assets/cmd.png";
 import solitare from "../../assets/solitaire.png";
 import linkedin from "../../assets/linkedin.png";
@@ -37,25 +39,35 @@ export default function Home() {
     console.log("Icon Clicked!");
   };
   const handleOpenGitHub = () => {
-    window.open("https://github.com/firwer", "_blank", "noreferrer");
+    window.open("https://github.com/kishan2k2", "_blank", "noreferrer");
+  };
+  const handleOpenLeetCode = () => {
+    window.open("https://leetcode.com/u/payadikishan", "_blank", "noreferrer");
+  };
+  const handleOpencodechef = () => {
+    window.open("https://www.codechef.com/users/kishan2k2", "_blank", "noreferrer");
   };
 
   const handleOpenLinkedin = () => {
     window.open(
-      "https://www.linkedin.com/in/poh-wei-pin-7b9061183/",
+      "https://www.linkedin.com/in/kishan-payadi-5906a9216/",
       "_blank",
       "noreferrer"
     );
   };
 
   const handleOpenResume = () => {
-    window.open("./Resume.pdf");
+    window.open(
+      "https://drive.google.com/file/d/1AQccmcrAY1Ku9eXHAMoO_-5tiN3BzWcc/view?usp=sharing",
+      "_blank",
+      "noreferrer"
+    );
   };
 
   return (
     <>
       <Head>
-        <title>Wei Pin&apos;s Personal Website - Home Page</title>
+        <title>Kishan;s Personal Website - Home Page</title>
         <meta name="description" content="My Personal Space" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
@@ -76,40 +88,40 @@ export default function Home() {
           />
           <DesktopIcon
             appID={2}
-            doubleClick={iconClicked}
-            title="Recycling Bin"
-            img={bin}
-          />
-          <DesktopIcon
-            appID={3}
             doubleClick={handleOpenResume}
             title="My Resume"
             img={pdf}
           />
           <DesktopIcon
-            appID={4}
+            appID={3}
             doubleClick={handleOpenLinkedin}
             title="My LinkedIn"
             img={linkedin}
           />
           <DesktopIcon
-            appID={5}
+            appID={4}
             doubleClick={handleOpenGitHub}
             title="My Github"
             img={github}
           />
           <DesktopIcon
-            appID={6}
+            appID={5}
             doubleClick={() => handleRunApp(2)}
             title="My Work"
             img={cmd}
           />
 
           <DesktopIcon
+            appID={6}
+            doubleClick={handleOpenLeetCode}
+            title="LeetCode"
+            img={LeetCode}
+          />
+          <DesktopIcon
             appID={7}
-            doubleClick={iconClicked}
-            title="My Hobbies"
-            img={solitare}
+            doubleClick={handleOpencodechef}
+            title="CodeChef"
+            img={codechef}
           />
           {Tabs.map((tab, index) => {
             return tab.isMinimized ? (

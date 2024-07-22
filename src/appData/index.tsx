@@ -272,7 +272,7 @@ export const WorkData = [
     overview: `This project began as my software journey first began on Windows XP. Back then, I was
     trying out many different things on my old XP computer such as creating my little CLI application
     on batch files and also developing my very first GUI apps on Visual Studio 2010 (i.e Text encrypters,
-    My own Web browser, phishing program that can steal my friend's passwords :P, and I forgot what else...)
+    My own Web browser, phishing program that can steal my friend passwords :P, and I forgot what else...)
     .Unfortunately, I lost all of those files so it was somewhat nostalgic to recreate the environment
     that I used to have back then. Other than those, I also have fond memories of the MSN Messenger with 
     that irritating nudge function. Anyway, I figured out why not present all my works and my digital 
@@ -316,7 +316,7 @@ export const WorkData = [
       ee2026_7,
     ],
     overview: `In my EE2026 Digital Design Class, my partner and I collaborated on an Audio Visual System 
-    project that encompassed both individual and team components. Our team's contribution consisted of an 
+    project that encompassed both individual and team components. Our team contribution consisted of an 
     interactive mouse-based drawing tool, complete with a canvas, color palette changer, rectangle drawing 
     tool, and brush size selection. For my individual role, I developed a P-Mod OLED digital stopwatch timer 
     with lap timing functionality and a whistle-based start/stop feature, powered by the Pmod MIC3. 
@@ -413,7 +413,7 @@ export const WorkData = [
     gallery: [dsta_7, dsta_1, dsta_2, dsta_3, dsta_4, dsta_5, dsta_6, dsta_8],
     overview: `MyArmyPal serves to be an all in one service for our service men. It seeks to provide convenience 
       and useful features just one tap away. Its main features include an IPPT Calculator, reservist 
-      checklist, customized IPPT training plan according to the user's current fitness level and a canteen 
+      checklist, customized IPPT training plan according to the user current fitness level and a canteen 
       order pick up service in all army camps.`,
   },
   {
@@ -429,7 +429,7 @@ export const WorkData = [
       TechIcon.CSS,
     ],
     gallery: [mr1, mr2],
-    overview: `I have worked as a frontend software developer for Google's Developer Student Club. Our team project aims to
+    overview: `I have worked as a frontend software developer for Google Developer Student Club. Our team project aims to
     build a new CMS portal for Mercy Relief, a non-profit organization that supports disaster relief efforts
     worldwide. The newly revamped CMS portal aims to provide a more user-friendly interface for the Mercy Relief 
     team to manage their global campaigns, press release articles, and donation drives. Some areas I have contributed
@@ -470,7 +470,7 @@ export const WorkData = [
     based on parameters like startup size, industry, and funding stage. Users can conveniently add their 
     preferred startups to your profile and when they are ready to apply, users can easily generate a 
     personalized cold-email using generative AI. The email is tailored to details from the uploaded resume, 
-    as well as essential information such as the user's major, year of study, and preferred internship role.`,
+    as well as essential information such as the user major, year of study, and preferred internship role.`,
   },
 ] as WorkContent[];
 
